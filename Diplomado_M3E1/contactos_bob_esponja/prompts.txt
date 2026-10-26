@@ -1,0 +1,31 @@
+Generados con la herramienta integrada de imágenes.
+
+calamardo
+Use case: stylized-concept. Create one square contact avatar image of Squidward Tentacles from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+arenita
+Use case: stylized-concept. Create one square contact avatar image of Sandy Cheeks wearing her clear round air helmet from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+plankton
+Use case: stylized-concept. Create one square contact avatar image of Sheldon Plankton, single eye and antennae from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+gary
+Use case: stylized-concept. Create one square contact avatar image of Gary the snail, include eyestalks and recognizable shell from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+perlita
+Use case: stylized-concept. Create one square contact avatar image of Pearl Krabs the teenage whale from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+senora_puff
+Use case: stylized-concept. Create one square contact avatar image of Mrs. Puff from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+larry
+Use case: stylized-concept. Create one square contact avatar image of Larry the Lobster from SpongeBob SquarePants for an iOS UITableView learning project. Single character only, recognizable original cartoon appearance, clean polished 2D cartoon illustration, bold crisp outlines, flat vibrant colors, simple solid pastel aqua background. Centered close-up head and shoulders (adapt framing to character anatomy), entire face with generous safe margin for circular cropping, expressive friendly personality, readable at 60x60 points. Square 1:1 composition, target 1024x1024. No text, no letters, no watermark, no border, no collage, no UI.
+
+karen
+Use case: stylized-concept. A square contact avatar of Karen Plankton, the computer character with a gray monitor head and green waveform on a black screen from SpongeBob SquarePants. Single character, clean polished 2D cartoon illustration with bold outlines, vibrant colors, simple pastel aqua background. Centered head and shoulders portrait, face fully visible, recognizable friendly character, suitable for a small contact cell. Square 1:1. No text, no watermark, no UI, no collage.
+
+hombre_sirena
+Use case: stylized-concept. A square contact avatar of Mermaid Man, elderly superhero wearing his orange shirt, purple seashell chest pieces, green gloves and small black eye mask from SpongeBob SquarePants. Single character, clean polished 2D cartoon illustration with bold outlines, vibrant colors, simple pastel aqua background. Centered head and shoulders portrait, face fully visible, recognizable friendly character, suitable for a small contact cell. Square 1:1. No text, no watermark, no UI, no collage.
+
+chico_percebe
+Use case: stylized-concept. A square contact avatar of Barnacle Boy, elderly superhero with his white sailor hat, black eye mask, red shirt and blue neck scarf from SpongeBob SquarePants. Single character, clean polished 2D cartoon illustration with bold outlines, vibrant colors, simple pastel aqua background. Centered head and shoulders portrait, face fully visible, recognizable friendly character, suitable for a small contact cell. Square 1:1. No text, no watermark, no UI, no collage.
