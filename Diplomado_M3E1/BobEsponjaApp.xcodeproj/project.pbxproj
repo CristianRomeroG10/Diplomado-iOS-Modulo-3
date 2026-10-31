@@ -34,8 +34,10 @@
 /* Begin PBXFrameworksBuildPhase section */
 		AFB6C0F83083DFCF00F90AB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -68,6 +70,8 @@
 				AFB6C0F93083DFCF00F90AB0 /* Resources */,
 			);
 			buildRules = (
+			);
+			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
 				AFB6C0FD3083DFCF00F90AB0 /* BobEsponjaApp */,
@@ -114,21 +118,25 @@
 /* Begin PBXResourcesBuildPhase section */
 		AFB6C0F93083DFCF00F90AB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFB6C0F73083DFCF00F90AB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AFB6C10F3083DFD000F90AB0 /* Debug configuration for PBXNativeTarget "BobEsponjaApp" */ = {
+		AFB6C10F3083DFD000F90AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -159,7 +167,7 @@
 			};
 			name = Debug;
 		};
-		AFB6C1103083DFD000F90AB0 /* Release configuration for PBXNativeTarget "BobEsponjaApp" */ = {
+		AFB6C1103083DFD000F90AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -190,7 +198,7 @@
 			};
 			name = Release;
 		};
-		AFB6C1113083DFD000F90AB0 /* Debug configuration for PBXProject "BobEsponjaApp" */ = {
+		AFB6C1113083DFD000F90AB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		AFB6C1123083DFD000F90AB0 /* Release configuration for PBXProject "BobEsponjaApp" */ = {
+		AFB6C1123083DFD000F90AB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,21 +325,22 @@
 		AFB6C0F63083DFCF00F90AB0 /* Build configuration list for PBXProject "BobEsponjaApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFB6C1113083DFD000F90AB0 /* Debug configuration for PBXProject "BobEsponjaApp" */,
-				AFB6C1123083DFD000F90AB0 /* Release configuration for PBXProject "BobEsponjaApp" */,
+				AFB6C1113083DFD000F90AB0 /* Debug */,
+				AFB6C1123083DFD000F90AB0 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		AFB6C10E3083DFD000F90AB0 /* Build configuration list for PBXNativeTarget "BobEsponjaApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFB6C10F3083DFD000F90AB0 /* Debug configuration for PBXNativeTarget "BobEsponjaApp" */,
-				AFB6C1103083DFD000F90AB0 /* Release configuration for PBXNativeTarget "BobEsponjaApp" */,
+				AFB6C10F3083DFD000F90AB0 /* Debug */,
+				AFB6C1103083DFD000F90AB0 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
 	rootObject = AFB6C0F33083DFCF00F90AB0 /* Project object */;
-	validationLevel = 1;
 }
