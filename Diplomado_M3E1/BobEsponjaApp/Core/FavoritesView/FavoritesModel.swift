@@ -9,6 +9,23 @@ import Foundation
 import UIKit
 
 class FavoritesModel{
+    
+    var favoriteCharacters: [CharactersModel] = []
+    
+    init() {
+        loadFavorite()
+    }
+    
+    
+    func loadFavorite(){
+        guard let data = UserDefaults.standard.data(forKey: userDefaultsKeys.favorite.rawValue) else {
+            favoriteCharacters = []
+            return
+        }
+        
+        favoriteCharacters = (try? JSONDecoder().decode([CharactersModel].self, from: data)) ?? []
+    }
+    
     func getNumberOfRows() -> Int {
         favoriteCharacters.count
     }
@@ -18,6 +35,15 @@ class FavoritesModel{
     }
     
     func removeCharacters(at index: IndexPath) {
-        favoriteCharacters.remove(at: index.row)
+        var updatedFavorites = favoriteCharacters
+        
+        updatedFavorites.remove(at: index.row)
+        
+        guard let data = try? JSONEncoder().encode(updatedFavorites) else {
+            return
+        }
+        
+        UserDefaults.standard.set(data, forKey: "favorite")
+        favoriteCharacters = updatedFavorites
     }
 }

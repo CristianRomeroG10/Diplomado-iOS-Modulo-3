@@ -7,7 +7,11 @@
 
 import UIKit
 
-var favoriteCharacters: [CharactersModel] = []
+enum userDefaultsKeys: String {
+    case favorite = "favorite"
+}
+
+//var favoriteCharacters: [CharactersModel] = []
 
 class CharacterViewController: UIViewController {
     
@@ -42,6 +46,28 @@ class CharacterViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func saveFavorites(favoriteCharacter: CharactersModel){
+        var favorites: [CharactersModel] = []
+        
+        if let data = UserDefaults.standard.data(forKey: userDefaultsKeys.favorite.rawValue) {
+            guard let saved = try? JSONDecoder().decode([CharactersModel].self, from: data) else {
+                return
+            }
+            favorites = saved
+        }
+        
+        guard !favorites.contains(where: { $0.alias == favoriteCharacter.alias}) else {
+            return
+        }
+        
+        favorites.append(favoriteCharacter)
+        
+        guard let data = try? JSONEncoder().encode(favorites) else {
+            return
+        }
+        
+        UserDefaults.standard.set(data, forKey: userDefaultsKeys.favorite.rawValue)
+    }
 }
 
 extension CharacterViewController: UITableViewDataSource {
@@ -90,10 +116,7 @@ extension CharacterViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let addFavorite = UIContextualAction(style: .normal, title: "Agregar favorito") { _, _, completion in
             let character = self.model.getCharacter(index: indexPath)
-
-            if !favoriteCharacters.contains(where: { $0.alias == character.alias}){
-                favoriteCharacters.append(character)
-            }
+            self.saveFavorites(favoriteCharacter: character)
             completion(true)
         }
         

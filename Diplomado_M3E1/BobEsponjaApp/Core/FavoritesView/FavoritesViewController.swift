@@ -20,6 +20,7 @@ class FavoritesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        model.loadFavorite()
         favoritesTableView.reloadData()
     }
 
@@ -81,7 +82,7 @@ extension FavoritesViewController: UITableViewDataSource {
 extension FavoritesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let favoriteDatail =  CharactersDetailViewController()
-        favoriteDatail.character = favoriteCharacters[indexPath.row]
+        favoriteDatail.character = model.getFavoriteCharacter(index: indexPath)
         self.navigationController?.pushViewController(favoriteDatail, animated: true)
     }
     

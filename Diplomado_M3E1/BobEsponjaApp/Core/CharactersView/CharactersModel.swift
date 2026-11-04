@@ -13,7 +13,7 @@ struct CharacterSection{
     let characters: [CharactersModel]
 }
 
-struct CharactersModel {
+struct CharactersModel: Codable {
     let image: String
     let alias: String
     let name: String
