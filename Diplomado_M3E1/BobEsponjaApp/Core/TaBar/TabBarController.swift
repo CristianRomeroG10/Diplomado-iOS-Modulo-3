@@ -16,7 +16,7 @@ class TabBarController: UITabBarController {
     
     func setUpViews(){
         
-        //MARK: First View
+        //MARK: Characters View
         //Instanciamos El viewController
         let characterViewController = CharacterViewController()
         //Embebemos el viewController en un navigation Controller
@@ -26,7 +26,7 @@ class TabBarController: UITabBarController {
         characterNavigation.tabBarItem.selectedImage = UIImage(systemName: "person.2.circle.fill")
         
         
-        //MARK: Third View
+        //MARK: Favorites View
         //Instanciamos El viewController
         let favoriteViewController = FavoritesViewController()
         //Embebemos el viewController en un navigation Controller
@@ -35,8 +35,15 @@ class TabBarController: UITabBarController {
         favoritesNavigation.tabBarItem.image = UIImage(systemName: "heart.circle")
         favoritesNavigation.tabBarItem.selectedImage = UIImage(systemName: "heart.circle.fill")
         
+        //MARK: Explore View
+        let exploreViewController = ExploreViewController()
+        let exploreNavigation = UINavigationController(rootViewController: exploreViewController)
+        exploreNavigation.tabBarItem.title = "Explore"
+        exploreNavigation.tabBarItem.image = UIImage(systemName: "safari")
+        exploreNavigation.tabBarItem.selectedImage = UIImage(systemName: "safari.fill")
+        
         //MARK: ViewControllers ARRAY
-        let viewControllers: [UIViewController] = [characterNavigation, favoritesNavigation]
+        let viewControllers: [UIViewController] = [characterNavigation, favoritesNavigation, exploreNavigation]
         self.viewControllers = viewControllers
         self.selectedIndex = 0
     }
