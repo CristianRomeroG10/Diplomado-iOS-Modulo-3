@@ -1,0 +1,332 @@
+
+{
+  "sections": [
+    {
+      "id": "vehicles",
+      "title": "Vehículos",
+      "items": [
+        {
+          "id": "normalBoatmobile",
+          "name": "Bote de Fondo de Bikini",
+          "imageName": "normalBoatmobile",
+          "description": "Un bote con ruedas utilizado para recorrer las calles de Fondo de Bikini.",
+          "owner": null,
+          "firstAppearance": null,
+          "capacity": null
+        },
+        {
+          "id": "bassBlaster3000",
+          "name": "Bass Blaster 3000",
+          "imageName": "bassBlaster3000",
+          "description": "Un llamativo vehículo deportivo morado con llamas decorativas, un gran motor y un alerón trasero.",
+          "owner": null,
+          "firstAppearance": null,
+          "capacity": null
+        },
+        {
+          "id": "squidwardBicycle",
+          "name": "Bicicleta de Calamardo",
+          "imageName": "squidwardBicycle",
+          "description": "Una bicicleta para desplazarse por Fondo de Bikini, con una bocina junto al manubrio.",
+          "owner": "Calamardo Tentáculos",
+          "firstAppearance": null,
+          "capacity": 1
+        },
+        {
+          "id": "vehicleSandyRocket",
+          "name": "Cohete de Arenita",
+          "imageName": "vehicleSandyRocket",
+          "description": "Una nave construida por Arenita para sus expediciones espaciales. Bob Esponja y Patricio convierten una visita a su interior en una aventura inesperada.",
+          "owner": "Arenita Mejillas",
+          "firstAppearance": null,
+          "capacity": null
+        },
+        {
+          "id": "vehicleFlyingDutchman_ship",
+          "name": "Barco del Holandés Volador",
+          "imageName": "vehicleFlyingDutchman_ship",
+          "description": "Un barco fantasmal de aspecto pirata, con velas desgastadas y un resplandor verde que anuncia la presencia de su capitán.",
+          "owner": "Holandés Volador",
+          "firstAppearance": null,
+          "capacity": null
+        },
+        {
+          "id": "policeBoat",
+          "name": "Bote de policía",
+          "imageName": "policeBoat",
+          "description": "Una patrulla con luces de emergencia que recorre las calles para mantener el orden en Fondo de Bikini.",
+          "owner": null,
+          "firstAppearance": null,
+          "capacity": null
+        },
+        {
+          "id": "bikiniBottomBus",
+          "name": "Autobús de Fondo de Bikini",
+          "imageName": "bikiniBottomBus",
+          "description": "Un transporte colectivo que conecta distintos destinos submarinos. Conseguir tomarlo a tiempo puede convertirse en un reto para Bob Esponja.",
+          "owner": null,
+          "firstAppearance": null,
+          "capacity": null
+        },
+        {
+          "id": "pattyWagon",
+          "name": "Patty Wagon",
+          "imageName": "pattyWagon",
+          "description": "El vehículo con forma de hamburguesa que Bob Esponja y Patricio utilizan para buscar la corona de Neptuno.",
+          "owner": "Crustáceo Cascarudo",
+          "firstAppearance": "Bob Esponja: La película",
+          "capacity": 2
+        },
+        {
+          "id": "boaty",
+          "name": "Boaty",
+          "imageName": "boaty",
+          "description": "El bote que Bob Esponja recibe como regalo después de conseguir su licencia en No Free Rides. La señora Puff teme las consecuencias de verlo conducir.",
+          "owner": "Bob Esponja",
+          "firstAppearance": "No Free Rides",
+          "capacity": null
+        },
+        {
+          "id": "invisibleBoatmobile",
+          "name": "Bote invisible",
+          "imageName": "invisibleBoatmobile",
+          "description": "El vehículo invisible de Hombre Sirena y Chico Percebe. Encontrar dónde lo estacionaron puede ser toda una aventura.",
+          "owner": "Hombre Sirena y Chico Percebe",
+          "firstAppearance": null,
+          "capacity": null
+        }
+      ]
+    },
+    {
+      "id": "houses",
+      "title": "Hogares y lugares",
+      "items": [
+        {
+          "id": "house_spongebob",
+          "name": "Casa Piña",
+          "imageName": "house_spongebob",
+          "description": "Una piña con ventanas redondas y una puerta azul donde viven Bob Esponja y su mascota Gary.",
+          "owner": "Bob Esponja",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Bob Esponja",
+            "Gary"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "house_patrick",
+          "name": "Casa de Patricio",
+          "imageName": "house_patrick",
+          "description": "Una roca que se levanta para revelar el hogar de Patricio. Su interior incluye muebles y espacios hechos principalmente de arena.",
+          "owner": "Patricio Estrella",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Patricio Estrella"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "house_squidward",
+          "name": "Casa de Calamardo",
+          "imageName": "house_squidward",
+          "description": "Una casa con forma de cabeza de moái situada entre los hogares de Bob Esponja y Patricio. Calamardo busca tranquilidad en su interior.",
+          "owner": "Calamardo Tentáculos",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Calamardo Tentáculos"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "house_sandy",
+          "name": "Domo de Arenita",
+          "imageName": "house_sandy",
+          "description": "Una cúpula transparente llena de aire que contiene un árbol y el hogar de Arenita. Los visitantes marinos necesitan agua para respirar dentro.",
+          "owner": "Arenita Mejillas",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Arenita Mejillas"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "house_krabs",
+          "name": "Casa de Don Cangrejo",
+          "imageName": "house_krabs",
+          "description": "Una vivienda con forma de ancla donde Don Cangrejo vive con su hija Perlita.",
+          "owner": "Don Cangrejo",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Don Cangrejo",
+            "Perlita"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "house_mrs_puff",
+          "name": "Casa de la señora Puff",
+          "imageName": "house_mrs_puff",
+          "description": "El hogar donde la señora Puff intenta descansar después de sus complicadas clases de conducción.",
+          "owner": "Señora Puff",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Señora Puff"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "house_grandma",
+          "name": "Casa de la abuela",
+          "imageName": "house_grandma",
+          "description": "El acogedor hogar de la abuela de Bob Esponja, donde sus visitas suelen incluir galletas, cariño y recuerdos de la infancia.",
+          "owner": "Abuela de Bob Esponja",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Abuela de Bob Esponja"
+          ],
+          "hasSecretFormula": false
+        },
+        {
+          "id": "place_krusty_krab",
+          "name": "Crustáceo Cascarudo",
+          "imageName": "place_krusty_krab",
+          "description": "El restaurante de Don Cangrejo, famoso por sus cangreburgers. Bob Esponja trabaja en la cocina y Calamardo atiende la caja.",
+          "owner": "Don Cangrejo",
+          "firstAppearance": null,
+          "address": null,
+          "residents": null,
+          "hasSecretFormula": true
+        },
+        {
+          "id": "place_chum_bucket",
+          "name": "Balde de Carnada",
+          "imageName": "place_chum_bucket",
+          "description": "El restaurante de Plankton y Karen tiene forma de cubeta. También funciona como base para sus planes de conseguir la fórmula secreta.",
+          "owner": "Plankton",
+          "firstAppearance": null,
+          "address": null,
+          "residents": [
+            "Plankton",
+            "Karen"
+          ],
+          "hasSecretFormula": false
+        }
+      ]
+    },
+    {
+      "id": "objects",
+      "title": "Objetos icónicos",
+      "items": [
+        {
+          "id": "object_spatula",
+          "name": "Espátula",
+          "imageName": "object_spatula",
+          "description": "La herramienta favorita de Bob Esponja para preparar cangreburgers. En sus manos, cada hamburguesa recibe atención especial.",
+          "owner": "Bob Esponja",
+          "firstAppearance": null,
+          "material": "Metal",
+          "specialAbility": null
+        },
+        {
+          "id": "object_jellyfish_net",
+          "name": "Red para medusas",
+          "imageName": "object_jellyfish_net",
+          "description": "Una red de mango largo utilizada por Bob Esponja durante sus aventuras en el campo de medusas.",
+          "owner": "Bob Esponja",
+          "firstAppearance": null,
+          "material": null,
+          "specialAbility": null
+        },
+        {
+          "id": "object_secret_formula",
+          "name": "Fórmula secreta",
+          "imageName": "object_secret_formula",
+          "description": "La receta de la cangreburger, protegida por Don Cangrejo y perseguida por Plankton. Se guarda dentro de una botella.",
+          "owner": "Don Cangrejo",
+          "firstAppearance": null,
+          "material": "Papel",
+          "specialAbility": null
+        },
+        {
+          "id": "object_clarinet",
+          "name": "Clarinete de Calamardo",
+          "imageName": "object_clarinet",
+          "description": "El instrumento musical que acompaña a Calamardo en sus ensayos y en sus sueños de convertirse en un artista reconocido.",
+          "owner": "Calamardo Tentáculos",
+          "firstAppearance": null,
+          "material": null,
+          "specialAbility": null
+        },
+        {
+          "id": "object_magic_conch",
+          "name": "Caracola mágica",
+          "imageName": "object_magic_conch",
+          "description": "Una caracola de juguete con una cuerda que activa respuestas. Bob Esponja y Patricio confían en sus consejos para tomar decisiones.",
+          "owner": null,
+          "firstAppearance": null,
+          "material": "Plástico",
+          "specialAbility": "Reproducir respuestas al tirar de una cuerda"
+        },
+        {
+          "id": "object_mermaid_belt",
+          "name": "Cinturón de Hombre Sirena",
+          "imageName": "object_mermaid_belt",
+          "description": "Un cinturón de superhéroe con dispositivos especiales que pueden causar problemas si alguien los utiliza sin conocerlos.",
+          "owner": "Hombre Sirena",
+          "firstAppearance": null,
+          "material": null,
+          "specialAbility": "Encoger objetos y personajes"
+        },
+        {
+          "id": "object_magic_pencil",
+          "name": "Lápiz mágico",
+          "imageName": "object_magic_pencil",
+          "description": "Un lápiz capaz de dar vida a los dibujos. Una herramienta extraordinaria que exige cuidado al imaginar nuevas creaciones.",
+          "owner": null,
+          "firstAppearance": null,
+          "material": "Madera y grafito",
+          "specialAbility": "Dar vida a los dibujos"
+        },
+        {
+          "id": "object_karate_glove",
+          "name": "Guante de karate",
+          "imageName": "object_karate_glove",
+          "description": "Un guante acolchado utilizado para practicar karate. Bob Esponja y Arenita disfrutan poner a prueba sus habilidades con este equipo.",
+          "owner": "Arenita Mejillas",
+          "firstAppearance": null,
+          "material": null,
+          "specialAbility": null
+        },
+        {
+          "id": "object_bubble_bottle",
+          "name": "Frasco de burbujas",
+          "imageName": "object_bubble_bottle",
+          "description": "Un frasco con líquido y una varita para crear burbujas. Bob Esponja convierte esta actividad en todo un espectáculo.",
+          "owner": "Bob Esponja",
+          "firstAppearance": null,
+          "material": null,
+          "specialAbility": null
+        },
+        {
+          "id": "object_krabby_patty",
+          "name": "Cangreburger",
+          "imageName": "object_krabby_patty",
+          "description": "La especialidad del Crustáceo Cascarudo: una hamburguesa con pan de ajonjolí y una receta que atrae a los habitantes de Fondo de Bikini.",
+          "owner": null,
+          "firstAppearance": null,
+          "material": null,
+          "specialAbility": null
+        }
+      ]
+    }
+  ]
+}
+
