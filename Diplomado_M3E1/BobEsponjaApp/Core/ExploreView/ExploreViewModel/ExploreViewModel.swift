@@ -37,5 +37,7 @@ final class ExploreViewModel {
         sections.count
     }
     
-//    func getNumberOF
+    func getSectionType(at section: Int) -> ExploreSection? {
+        sections[section].id
+    }
 }
