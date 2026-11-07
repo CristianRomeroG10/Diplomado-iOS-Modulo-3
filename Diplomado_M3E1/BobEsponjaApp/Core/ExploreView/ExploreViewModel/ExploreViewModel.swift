@@ -5,7 +5,7 @@
 //  Created by Cristian Guillermo Romero Garcia on 06/11/26.
 //
 
-import Foundation
+import UIKit
 
 protocol ExploreViewModelDelegate: AnyObject {
     func exploreDidload()
@@ -21,6 +21,7 @@ final class ExploreViewModel {
     
     init(manager: ExploreManager = ExploreManager()){
         self.manager = manager
+        loadData()
     }
     
     func loadData(){
@@ -33,8 +34,21 @@ final class ExploreViewModel {
         }
     }
     
+    //Cuando una funcion que retorna un valor tiene una sola linea podemos omitir el return ya que se pone en automatico
     func getNumberOfSetions() -> Int {
         sections.count
+    }
+    
+    func getNumberOfItems(in section: Int) -> Int {
+        return sections[section].items.count
+    }
+    
+    func getTitle(for section: Int) -> String {
+        sections[section].title
+    }
+    
+    func getItem(at indexPath: IndexPath) -> ExploreItem {
+        sections[indexPath.section].items[indexPath.item]
     }
     
     func getSectionType(at section: Int) -> ExploreSection? {

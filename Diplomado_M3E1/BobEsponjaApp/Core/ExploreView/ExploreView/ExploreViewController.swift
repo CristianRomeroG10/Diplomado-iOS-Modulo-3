@@ -33,7 +33,7 @@ class ExploreViewController: UIViewController {
             collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
-        collectionView.register(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: <#T##String#>)
+        collectionView.register(ExploreCollectionViewCell.self, forCellWithReuseIdentifier: ExploreCollectionViewCell.reuseIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
 
@@ -42,14 +42,19 @@ class ExploreViewController: UIViewController {
 
 extension ExploreViewController: UICollectionViewDataSource{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        <#code#>
+        viewModel.getNumberOfSetions()
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        viewModel.getNumberOfItems(in: section)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExploreCollectionViewCell.reuseIdentifier, for: indexPath) as? ExploreCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        let item = viewModel.getItem(at: indexPath)
+        cell.configure(with: item)
+        return cell
     }
     
     
@@ -57,7 +62,7 @@ extension ExploreViewController: UICollectionViewDataSource{
 
 extension ExploreViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        <#code#>
+        
     }
 }
 
@@ -164,4 +169,16 @@ extension ExploreViewController {
         section.interGroupSpacing = 8
         return section
     }
+}
+
+extension ExploreViewController: ExploreViewModelDelegate {
+    func exploreDidload() {
+        collectionView.reloadData()
+    }
+    
+    func exploreDidFail(with error: any Error) {
+        print("Error al cargar Explorar: \(error.localizedDescription)")
+    }
+    
+    
 }
