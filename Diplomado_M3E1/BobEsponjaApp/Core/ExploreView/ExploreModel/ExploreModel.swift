@@ -30,7 +30,7 @@ struct ExploreResponse: Codable {
 struct ExploreSectionData: Codable {
     let id: ExploreSection
     let title: String
-    let items: [ExploreItem]
+    var items: [ExploreItem]
 }
 
 struct ExploreItem: Codable {

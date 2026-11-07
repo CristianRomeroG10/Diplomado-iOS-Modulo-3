@@ -10,6 +10,7 @@ import UIKit
 class ExploreViewController: UIViewController {
     
     private let viewModel = ExploreViewModel()
+    private var isMovingItem = false
     
     private lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: makeLayOut())
@@ -37,7 +38,34 @@ class ExploreViewController: UIViewController {
         collectionView.register(ExploreSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ExploreSectionHeader.reuseIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        let longPress = UILongPressGestureRecognizer(
+            target: self,
+            action: #selector(handelLongPress(gesture: )))
+        collectionView.addGestureRecognizer(longPress)
     }
+    
+    @objc private func handelLongPress(gesture: UILongPressGestureRecognizer) {
+        let location = gesture.location(in: collectionView)
+        
+        switch gesture.state {
+        case .began:
+            guard let indexPath = collectionView.indexPathForItem(at: location) else {return}
+            isMovingItem = collectionView.beginInteractiveMovementForItem(at: indexPath)
+        case .changed where isMovingItem:
+            collectionView.updateInteractiveMovementTargetPosition(location)
+        case .ended where isMovingItem:
+            collectionView.endInteractiveMovement()
+            isMovingItem = false
+        case.cancelled where isMovingItem:
+            collectionView.cancelInteractiveMovement()
+            isMovingItem = false
+        default:
+            break
+        }
+    }
+    
+    
 }
 
 extension ExploreViewController: UICollectionViewDataSource{
@@ -64,8 +92,10 @@ extension ExploreViewController: UICollectionViewDataSource{
         }else {
             return UICollectionReusableView()
         }
-        
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        viewModel.moveItem(from: sourceIndexPath, to: destinationIndexPath)
     }
     
 }
@@ -73,6 +103,13 @@ extension ExploreViewController: UICollectionViewDataSource{
 extension ExploreViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath originalIndexPath: IndexPath, atCurrentIndexPath currentIndexPath: IndexPath, toProposedIndexPath proposedIndexPath: IndexPath) -> IndexPath {
+        if proposedIndexPath.section == originalIndexPath.section{
+            return proposedIndexPath
+        }
+        return currentIndexPath
     }
 }
 

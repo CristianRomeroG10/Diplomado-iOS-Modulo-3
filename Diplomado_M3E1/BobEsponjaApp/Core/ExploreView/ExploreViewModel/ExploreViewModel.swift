@@ -54,4 +54,11 @@ final class ExploreViewModel {
     func getSectionType(at section: Int) -> ExploreSection? {
         sections[section].id
     }
+    
+    func moveItem(from source: IndexPath, to destination: IndexPath) {
+        guard source.section == destination.section, getSectionType(at: source.section) == .objects else { return }
+        
+        let item = sections[source.section].items.remove(at: source.item)
+        sections[destination.section].items.insert(item, at: destination.item)
+    }
 }
