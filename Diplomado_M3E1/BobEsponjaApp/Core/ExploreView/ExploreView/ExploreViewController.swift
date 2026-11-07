@@ -34,9 +34,9 @@ class ExploreViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         collectionView.register(ExploreCollectionViewCell.self, forCellWithReuseIdentifier: ExploreCollectionViewCell.reuseIdentifier)
+        collectionView.register(ExploreSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ExploreSectionHeader.reuseIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-
     }
 }
 
@@ -57,6 +57,16 @@ extension ExploreViewController: UICollectionViewDataSource{
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ExploreSectionHeader.reuseIdentifier, for: indexPath) as? ExploreSectionHeader {
+            header.configure(with: viewModel.getTitle(for: indexPath.section))
+            return header
+        }else {
+            return UICollectionReusableView()
+        }
+        
+        
+    }
     
 }
 
