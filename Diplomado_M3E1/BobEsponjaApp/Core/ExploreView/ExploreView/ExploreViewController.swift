@@ -94,6 +94,10 @@ extension ExploreViewController: UICollectionViewDataSource{
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        viewModel.getSectionType(at: indexPath.section) == .objects
+    }
+    
     func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         viewModel.moveItem(from: sourceIndexPath, to: destinationIndexPath)
     }
@@ -102,7 +106,10 @@ extension ExploreViewController: UICollectionViewDataSource{
 
 extension ExploreViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let item = viewModel.getItem(at: indexPath)
+        let detailViewModel = ExploreDetailViewModel(item: item)
+        let detailVC = ExploreDetailViewController(viewModel: detailViewModel)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath originalIndexPath: IndexPath, atCurrentIndexPath currentIndexPath: IndexPath, toProposedIndexPath proposedIndexPath: IndexPath) -> IndexPath {
